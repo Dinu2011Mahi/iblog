@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="../CSS/contactStyle.css">
+</head>
+<body>
+    <header>
+        <div class="Title">
+            <a href="../Index.html"><img src="../Public/Image/logo.png" alt="iBlog"></a>
+            <span>iBlog</span> 
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="../Index.html">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="../HTML/Contact.html">Contact</a></li>
+                <li><a href="">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <form action="">
+                <input type="search" placeholder="Search Article here.." class="search">
+                <button class="btn"> search</button>
+            </form>
+        </div>
+    </header>
+
+    <h1>Blog Feedback Form</h1>
+    <p>
+      Thank you for staying with us. Please provide feedback what chances i have to do in blogs.
+    </p>
+    <main>
+        <div class="form-container">
+                <form method="POST" action="">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="full-name">Name (required):</label>
+                    <input type="text" id="full-name" name="name" placeholder="Ex. John Doe" required size="20">
+
+                    <label for="email">Email address (required):</label>
+                    <input
+                    placeholder="example@email.com"
+                    required
+                    id="email"
+                    type="email"
+                    name="email"
+                    size="20"
+                    />
+                    <label for="age">Age (optional):</label>
+                    <input type="number" name="age" id="age" min="3" max="100" />
+                </fieldset>
+
+                <fieldset>
+                    <legend>Was this your first time at our hotel?</legend>
+                    <label for="yes-option">Yes</label>
+                    <input id="yes-option" type="radio" name="hotel-stay" />
+                    <label for="no-option">No</label>
+                    <input id="no-option" type="radio" name="hotel-stay" />
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        Why did you choose to stay at our hotel? (Check all that apply)
+                    </legend>
+
+                    <label for="ads">Social Media Ads</label>
+                    <input type="checkbox" id="ads" name="ads" value="ads" />
+
+                    <label for="recommendation">Personal Recommendation</label>
+                    <input
+                    type="checkbox"
+                    id="recommendation"
+                    name="recommendation"
+                    value="recommendation"
+                    />
+
+                    <label for="location">Location</label>
+                    <input type="checkbox" id="location" name="location" value="location" />
+
+                    <label for="reputation">Reputation</label>
+                    <input
+                    checked
+                    type="checkbox"
+                    id="reputation"
+                    name="reputation"
+                    value="reputation"
+                    />
+
+                    <label for="price">Price</label>
+                    <input type="checkbox" id="price" name="price" value="price" />
+                </fieldset>
+
+                <fieldset>
+                    <legend>Ratings</legend>
+
+                    <label for="service">How was the service?</label>
+
+                    <select name="service" id="service">
+                    <option value="poor">Poor</option>
+                    <option value="satisfactory">Satisfactory</option>
+                    <option value="good">Good</option>
+                    <option value="very-good">Very Good</option>
+                    <option selected value="excellent">Excellent</option>
+                    </select>
+
+                    <label for="food">How was the food?</label>
+
+                    <select name="food" id="food">
+                    <option value="poor">Poor</option>
+                    <option value="satisfactory">Satisfactory</option>
+                    <option value="good">Good</option>
+                    <option value="very-good">Very Good</option>
+                    <option selected value="excellent">Excellent</option>
+                    </select>
+                </fieldset>
+
+                <label for="comments">Other Comments?</label>
+                <textarea cols="30" rows="10" name="comments" id="comments"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+  </main>
+
+    <footer>
+        <div class="try-footer">
+            <div class="try-site">
+                <span>iBlog.com Blog Post Site</span>
+            </div>
+            <div class="try-category">
+                <span>Category</span>
+            </div>
+            <div class="try-contect">
+                <span>Contact</span>
+            </div>
+        </div>
+        <div class="first-footer">
+            <div class="site-name">
+                <p>iBlog is a home for human stories and ideas. Here, anyone can share knowledge and wisdom with the world—without having to build a mailing list or a following first.</p>
+                <div class="site-logo">
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+            </div>
+            <div class="category">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <address>
+                    <p><strong>Address:</strong> L-Block 700 Gali No. 14 <br>Near Shani Bazar,  Sangam Vihar <br>New Delhi - 110080</p>
+                    <p><strong>Phone:</strong> <a href="tel: +91">+91 8810268868</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:contact">dnegi342@gmail.com</a></p>
+                </address>
+            </div>
+        </div>
+        <div class="divider">
+            <hr>
+        </div>
+        <div class="second-footer">
+            <p>Copyright &copy; iBlog.com</p>
+            <p>By Dinesh Negi | All Right Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

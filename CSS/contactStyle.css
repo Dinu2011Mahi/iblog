@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap");
+
+:root { 
+  --main-bg-color2: rgba(255, 124, 9, 0.7);
+  --main-bg-color1: rgb(250, 137, 7);
+  --font1: "Roboto", sans-serif;
+  --font2: "Baloo Bhaina 2", cursive;
+}
+
+.divider{
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+/* header start */
+header{
+    width: 90vw;
+    margin: auto;
+    align-items: center;
+    margin: 20px 50px;
+    display: flex;
+    justify-content: space-around;
+    height: 5.5rem;
+    backdrop-filter: blur(40px);
+    box-shadow: 1px 1px 30px rgba(227, 228, 237 , 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+}
+
+header .Title{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .Title img{
+    width: 6rem;
+    cursor: pointer;
+    transition: 0.5s;
+    filter: grayscale(100%);
+}
+
+
+header .Title img:hover{
+    filter: drop-shadow(1px 1px 20px white);
+    filter: grayscale(0%);
+}
+
+header .Title span{
+    font-family: var(--font1);
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+    transition: 0.5s;
+}
+
+header .Title span:hover{
+    color: transparent;
+    -webkit-text-stroke: 1px white;   
+    text-shadow: 0px 1px 10px white;
+}
+
+header .navigation{
+    font-family: var(--font1);
+    justify-content: center;
+}
+
+header .navigation ul{
+    display: flex;
+    gap: 30px;
+    font-size: 25px;
+}
+
+header .navigation ul li{
+    list-style: none;
+}
+
+header .navigation ul li a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+header .navigation ul li a:hover{
+    text-decoration: underline;
+    color: var(--main-bg-color1)
+}
+
+header .search-bar input{
+    background-color: transparent;
+    border: 2px solid black;
+    width: 15rem;
+    height: 2rem;
+    outline: none;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+header .search-bar input:hover{
+    border: 2px solid var(--main-bg-color2);
+}
+
+header .search-bar input[type]{
+    color: tomato;
+    font-size: 20px;
+    font-family: var(--font2);
+}
+
+header .search-bar .btn{
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+header .search-bar .btn:hover{
+    background-color: var(--main-bg-color2)
+
+}
+/* header end */
+
+/* main content start */
+main .form-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 20px #babecc, -10px -10px 20px #ffffff;
+    border-radius: 20px;
+}
+
+/* main content end */
+
+/* footer Start */
+footer{
+    width: 90%;
+    backdrop-filter: blur(40px);
+    box-shadow: 1px 1px 30px rgba(227, 228, 237 , 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    margin: auto;
+    margin: 20px 50px;
+}
+
+footer .try-footer{
+    display: flex;
+    margin: 20px 30px;
+    text-align: center;
+    font-family: var(--font1);
+}
+
+footer .try-footer span{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+footer .try-footer .try-site{
+    width: 40%;
+}
+
+footer .try-footer .try-category{
+    width: 40%;
+}
+
+footer .try-footer .try-contact{
+    width: 20%;
+}
+
+footer .first-footer{
+    display: flex;
+    font-family: var(--font2);
+    margin: 20px 30px;
+    justify-content: space-around;
+}
+
+footer .first-footer .site-name{
+    width: 40%;
+    text-align: justify;
+    padding-left: 3rem;
+}
+
+footer .first-footer .site-name .site-logo i{
+    padding: 1rem 1rem;
+    cursor: pointer;
+}
+
+footer .first-footer .site-name .site-logo i:hover{
+    color: var(--main-bg-color2);
+}
+
+footer .first-footer .category{
+    width: 40%;
+    text-align: center;
+}
+
+footer .first-footer .category ul li{
+    list-style: none;
+}
+
+footer .first-footer .category ul li a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.5s;   
+}
+
+footer .first-footer .category ul li a:hover{
+    color: var(--main-bg-color1);
+}
+
+footer .first-footer .contact{
+    width: 20%;   
+}
+
+footer .second-footer{
+    display: flex;
+    gap: 2rem;
+    width: 80%;
+    margin: auto;
+    padding: 2rem 0rem 2rem 0rem;
+    justify-content: center;
+}
+footer .second-footer p{
+    font-size: 1.5rem;
+}
+
+/* footer end */
